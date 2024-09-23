@@ -32,7 +32,10 @@ for (let i = 0; i < buttons.length; i++) {
             operator = "";
             lastNumber = "";
             display.value = "";
-        } else if (value === "=") {
+        } else if (value === "Del") {
+            display.value = display.value.slice(0, -1);
+        }
+        else if (value === "=") {
             if (operator && previousInput !== "" && currentInput !== "") {
                 currentInput = calculate(previousInput, operator, currentInput);
                 display.value = currentInput;
