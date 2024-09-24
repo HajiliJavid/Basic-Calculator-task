@@ -45,8 +45,7 @@ for (let i = 0; i < buttons.length; i++) {
         } else if (value === "%") {
             if (lastNumber !== "" && currentInput !== "") {
                 const percentage = (parseFloat(currentInput) / 100) * parseFloat(lastNumber);
-                currentInput = percentage.toString();
-                display.value = currentInput;
+                display.value = percentage.toString;
             }
         } else {
             if (currentInput !== "") {
